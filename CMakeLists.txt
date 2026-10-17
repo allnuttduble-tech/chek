@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.20)
+project(DetectAcUI LANGUAGES CXX)
+add_executable(DetectAcUI WIN32 main.cpp)
+target_compile_features(DetectAcUI PRIVATE cxx_std_17)
+target_link_libraries(DetectAcUI PRIVATE user32 gdi32 winhttp bcrypt advapi32 shell32)

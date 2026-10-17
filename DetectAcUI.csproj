@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>DetectAcUI</RootNamespace>
+    <AssemblyName>DetectAcUI</AssemblyName>
+  </PropertyGroup>
+
+  <!-- Тестовый харнесс сканеров (tools\ScanHarness) и панель (panel) не входят в основную сборку -->
+  <ItemGroup>
+    <Compile Remove="tools\**" />
+    <Compile Remove="panel\**" />
+  </ItemGroup>
+
+  <!-- Адрес панели лицензий копируется рядом с exe (читает Licensing/LicenseClient.cs) -->
+  <ItemGroup>
+    <None Include="sentinel.config.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

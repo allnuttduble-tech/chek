@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "LbzWwdO3KKoNZfLUunWqbpnjluTTvH3Su1Lu1uXsHh8=",
+  "Source": "sentinel-panel",
+  "BasePath": "_content/sentinel-panel",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

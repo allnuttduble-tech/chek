@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Временный тестовый харнесс сканеров; исключён из основной сборки
+       (в DetectAcUI.csproj стоит Compile Remove="tools\**"). -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Reference Include="DetectAcUI">
+      <HintPath>..\..\bin\Debug\net8.0-windows\DetectAcUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
